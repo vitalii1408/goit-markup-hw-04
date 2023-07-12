@@ -327,7 +327,20 @@ flex-shrink: 0;
   letter-spacing: 0.02em;
   text-align: center;
   padding: 0px;
+  margin-bottom: 8px;
   text-align: center;
+}
+.social{
+  padding-bottom: 32px;
+}
+
+.social-icons{
+  justify-content: space-between;
+align-items: center;
+gap: 24px;
+height: 12px;
+width: 12px;
+border-radius: 40px; 
 }
 
 /**footer section*/
