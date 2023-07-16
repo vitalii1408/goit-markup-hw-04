@@ -89,11 +89,10 @@ img {
 .header-logo-link:focus {
   color: #404bbf;
 }
- .header-cont{
+.header-cont {
   display: flex;
-  }
-.header-cont{
-
+}
+.header-cont {
 }
 
 .mailo {
@@ -116,6 +115,21 @@ img {
 .logo-span:hover {
   color: #404bbf;
 }
+    
+.current {
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+}
 
 .header-spc {
   display: block;
@@ -126,15 +140,12 @@ img {
   color: #2e2f42;
   padding: 24px 0;
 }
-.header-spc:hover {
-  color: #404bbf;
+.header-spc:is(:hover, :focus) {
+  
+ color:#404BBF ;
 }
-.header-spc:focus {
-  color: #404bbf;
-}
-.adres {
-  font-style: normal;
-}
+
+
 
 .lict {
   display: flex;
@@ -144,28 +155,7 @@ img {
   letter-spacing: 0.02em;
   gap: 40px;
 }
-.header-spc:after {
-  display: block;
-  left: 0;
-  /*изменить на right:0;, чтобы изменить направление подчёркивания */
-  width: 0;
-  /*задаём длинну линии до наведения курсора*/
-  height: 4px;
-  /*задаём ширину линии*/
-  background-color: #404BBF;
-  /*задаём цвет линии*/
-  content: "";
-  border-radius: 2px;
 
-}
-  /*задаём время анимации
-.menu {
-}*/
-.header-spc:hover:after,
-.header-spc:focus:after {
-  width: 100%;
-  /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-}
 
 .linc-com-tel {
   display: block;
@@ -192,11 +182,12 @@ img {
 
 .sec-es {
   width: 1440px;
-    height: 600px;
-flex-shrink: 0;
+  height: 600px;
+  flex-shrink: 0;
   padding: 188px 0;
-  background:  rgba(46, 47, 66, 0.70);
-  background: url(../images/home/office.jpg),lightgray 0px -167.766px / 100% 139.922% no-repeat;
+  background: rgba(46, 47, 66, 0.7);
+  background: url(../images/home/office.jpg),
+    lightgray 0px -167.766px / 100% 139.922% no-repeat;
 }
 
 .hiro-cont {
@@ -250,18 +241,18 @@ flex-shrink: 0;
 .one-sex {
   width: calc((100% - 72px) / 4);
 }
-.one-sex-all{
+.one-sex-all {
   border-radius: 4px;
-background: var(--cloud, #F4F4FD);
-padding: 24px 100px;
-margin-bottom: 8px;
+  background: var(--cloud, #f4f4fd);
+  padding: 24px 100px;
+  margin-bottom: 8px;
 }
-.one-sex-icons{
-  background-color: #F4F4FD;
+.one-sex-icons {
+  background-color: #f4f4fd;
   border-radius: 4px;
   width: 64px;
-height: 64px;
-flex-shrink: 0;
+  height: 64px;
+  flex-shrink: 0;
 }
 .cpdt {
   color: var(--accent-color);
@@ -320,7 +311,6 @@ flex-shrink: 0;
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 72px;
-  
 }
 .lint {
   display: flex;
@@ -328,12 +318,10 @@ flex-shrink: 0;
 }
 .all {
   max-width: 264px;
-  border-radius: 0px 0px 4px 4px; 
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
 .mark {
   padding: 32px 16px;
-  
 }
 .com {
   color: var(--accent-color);
@@ -359,37 +347,34 @@ flex-shrink: 0;
 
 .socials {
   display: flex;
-   gap: 24px;
+  gap: 24px;
   margin: 0px auto;
-
 }
 
 .socials-link {
   text-align: justify;
   width: 100%;
   height: 100%;
-  background-color: #4D5AE5;
+  background-color: #4d5ae5;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   transition: background-color 300ms ease, color 300ms ease;
-  
 }
 
 .socials-icon {
-  fill: #F4F4FD;
+  fill: #f4f4fd;
 }
 
 .socials-link:is(:hover, :focus) {
-  background-color: #31D0AA;
+  background-color: #31d0aa;
 }
 
 .socials-item {
   width: 40px;
   height: 40px;
 }
-
 
 /* .header-menu-link:is(:hover, :focus) {
   color: var(--accent-color)
@@ -405,26 +390,25 @@ flex-shrink: 0;
 }
 
 .customers-all {
- display: flex;
-gap: 24px; 
-width: calc((100% - 120px) / 6);
-padding-top: 232px;
-padding-bottom: 120px;
+  display: flex;
+  gap: 24px;
+  width: calc((100% - 120px) / 6);
+  padding-top: 232px;
+  padding-bottom: 120px;
 }
 
 .customers-all-svg {
   padding: 16px 32px;
   border-radius: 4px;
-  border: 1px solid  #8E8F99;
-  fill: #8E8F99;
+  border: 1px solid #8e8f99;
+  fill: #8e8f99;
   max-width: 168px;
 }
-.customers-all-svg{
-     
+.customers-all-svg {
 }
 
-.customers-icon:hover{
-   fill: #404BBF;
+.customers-icon:hover {
+  fill: #404bbf;
 }
 
 /**footer section*/
@@ -437,14 +421,14 @@ padding-bottom: 120px;
 }
 .footer-logo {
   display: inline-block;
-    color: #4d5ae5;
-    font-size: 18px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 16px;
+  color: #4d5ae5;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 .footer-logo:hover {
   color: #404bbf;
@@ -474,6 +458,18 @@ padding-bottom: 120px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
+}
+.social {
+}
+.social-media {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: 100px;
+  left: 384px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.21em;
 }
 
 /**--portfolio--*/
@@ -535,6 +531,21 @@ padding-bottom: 120px;
 .sex-img-all {
   width: calc((100% - 48px) / 3);
 }
+.sex-img-all:hover {
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    cubic-bezier(0.4, 0, 0.2, 1)
+}
+.sex-img-all:focus {
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 .app {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -548,8 +559,6 @@ padding-bottom: 120px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
- 
- 
 }
 .web-txt {
   color: var(--all_txt-color);
@@ -558,18 +567,16 @@ padding-bottom: 120px;
   line-height: 24px;
   letter-spacing: 0.02em;
   margin-bottom: 0px;
-  
 }
 .link {
 }
-.coms { 
+.coms {
   color: var(--accent-color);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px
- 
+  margin-bottom: 8px;
 }
 .tec {
 }
