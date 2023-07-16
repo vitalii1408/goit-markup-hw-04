@@ -239,12 +239,12 @@ img {
 }
 .one-sex-all {
   border-radius: 4px;
-  background: var(--cloud, #f4f4fd);
+  background: #f4f4fd;
   padding: 24px 100px;
   margin-bottom: 8px;
 }
 .one-sex-icons {
-  background-color: #f4f4fd;
+  color: #f4f4fd;
   border-radius: 4px;
   width: 64px;
   height: 64px;
