@@ -89,8 +89,11 @@ img {
 .header-logo-link:focus {
   color: #404bbf;
 }
-.header-cont {
+ .header-cont{
   display: flex;
+  }
+.header-cont{
+
 }
 
 .mailo {
@@ -141,7 +144,27 @@ img {
   letter-spacing: 0.02em;
   gap: 40px;
 }
+.header-spc:after {
+  display: block;
+  left: 0;
+  /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0;
+  /*задаём длинну линии до наведения курсора*/
+  height: 4px;
+  /*задаём ширину линии*/
+  background-color: #404BBF;
+  /*задаём цвет линии*/
+  content: "";
+  border-radius: 2px;
+
+}
+  /*задаём время анимации
 .menu {
+}*/
+.header-spc:hover:after,
+.header-spc:focus:after {
+  width: 100%;
+  /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
 .linc-com-tel {
@@ -168,8 +191,12 @@ img {
 /**section1*/
 
 .sec-es {
-  background-color: #2E2F42;
+  width: 1440px;
+    height: 600px;
+flex-shrink: 0;
   padding: 188px 0;
+  background:  rgba(46, 47, 66, 0.70);
+  background: url(../images/home/office.jpg),lightgray 0px -167.766px / 100% 139.922% no-repeat;
 }
 
 .hiro-cont {
@@ -302,10 +329,10 @@ flex-shrink: 0;
 .all {
   max-width: 264px;
   border-radius: 0px 0px 4px 4px; 
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .mark {
   padding: 32px 16px;
-  
   
 }
 .com {
@@ -328,19 +355,76 @@ flex-shrink: 0;
   text-align: center;
   padding: 0px;
   margin-bottom: 8px;
-  text-align: center;
-}
-.social{
-  padding-bottom: 32px;
 }
 
-.social-icons{
-  justify-content: space-between;
-align-items: center;
-gap: 24px;
-height: 12px;
-width: 12px;
-border-radius: 40px; 
+.socials {
+  display: flex;
+   gap: 24px;
+  margin: 0px auto;
+
+}
+
+.socials-link {
+  text-align: justify;
+  width: 100%;
+  height: 100%;
+  background-color: #4D5AE5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 300ms ease, color 300ms ease;
+  
+}
+
+.socials-icon {
+  fill: #F4F4FD;
+}
+
+.socials-link:is(:hover, :focus) {
+  background-color: #31D0AA;
+}
+
+.socials-item {
+  width: 40px;
+  height: 40px;
+}
+
+
+/* .header-menu-link:is(:hover, :focus) {
+  color: var(--accent-color)
+} */
+
+/* .header-menu-link:focus {
+  color: var(--accent-color)
+} */
+.customers {
+}
+
+.container {
+}
+
+.customers-all {
+ display: flex;
+gap: 24px; 
+width: calc((100% - 120px) / 6);
+padding-top: 232px;
+padding-bottom: 120px;
+}
+
+.customers-all-svg {
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid  #8E8F99;
+  fill: #8E8F99;
+  max-width: 168px;
+}
+.customers-all-svg{
+     
+}
+
+.customers-icon:hover{
+   fill: #404BBF;
 }
 
 /**footer section*/
@@ -353,14 +437,14 @@ border-radius: 40px;
 }
 .footer-logo {
   display: inline-block;
-  color: #4d5ae5;
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 16px;
+    color: #4d5ae5;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
 }
 .footer-logo:hover {
   color: #404bbf;
