@@ -432,11 +432,11 @@ img {
   width: 100%;
   height: 100%;
 }
-.customers-all-svg:hover {
+.customers-all-list:focus {
   color: #404bbf;
   border-color: #404bbf;
 }
-.customers-all-svg:focus {
+.customers-all-svg:hover {
   color: #404bbf;
   border-color: #404bbf;
 }
