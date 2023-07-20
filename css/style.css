@@ -399,7 +399,6 @@ img {
   width: 40px;
   height: 40px;
   justify-content: center;
-  gap: 24px;
 }
 .customers {
   padding: 120px 0;
@@ -416,6 +415,7 @@ img {
 }
 .customers-all {
   display: flex;
+  gap: 24px;
 }
 
 .customers-all-list {
