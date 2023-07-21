@@ -195,10 +195,12 @@ img {
     url(../images/home/office.jpg);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  margin: 0 auto;
 }
 
 .hiro-cont {
 }
+
 .sec-title {
   color: var(--txt-color);
   font-size: 56px;
@@ -207,6 +209,7 @@ img {
   letter-spacing: 0.02em;
   max-width: 496px;
   margin: 0px auto;
+  padding-top: 188px;
 }
 .sec-button {
   color: #ffffff;
