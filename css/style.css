@@ -75,7 +75,7 @@ img {
   align-items: center;
 }
 .header-logo-link {
-  color: #404bbf;
+  color: #4d5ae5;
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -118,6 +118,18 @@ img {
 .logo-span:hover {
   color: #404bbf;
 }
+.header-spc {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding: 24px 0;
+}
+.header-spc:is(:hover, :focus) {
+  color: #404bbf;
+}
 
 .current {
   position: relative;
@@ -134,19 +146,6 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: #404bbf;
-}
-
-.header-spc {
-  display: block;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding: 24px 0;
-}
-.header-spc:is(:hover, :focus) {
-  color: #404bbf;
 }
 
 .lict {
