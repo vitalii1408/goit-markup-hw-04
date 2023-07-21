@@ -447,12 +447,12 @@ img {
 /**footer section*/
 
 .footer {
-  display: flex;
   background-color: #2e2f42;
   padding: 100px 0;
-  align-items: baseline;
 }
 .foot-sexion {
+  display: flex;
+  align-items: baseline;
 }
 .footer-logo {
   display: inline-block;
@@ -493,43 +493,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
-}
-.social {
-  transform: translate(384px, -112px);
-}
-.social-media {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: 100px;
-  left: 384px;
-  font-weight: 500;
-  line-height: 1.5; /* 150% */
-  letter-spacing: 0.22em;
-  margin-bottom: 16px;
-}
-.socials {
-  display: flex;
-  gap: 16px;
-}
-.socials-item {
-  width: 40px;
-  height: 40px;
-}
-.socials-link {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-}
-.socials-link:hover {
-  background-color: #31d0aa;
-}
-.socials-link:focus .customers-txt {
-  background-color: #31d0aa;
 }
 
 /**--portfolio--*/
@@ -680,6 +643,92 @@ img {
 }
 
 .tec {
+}
+/**footer section*/
+
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+.footer-class {
+  display: flex;
+  align-items: baseline;
+}
+.foot-sexion {
+}
+.footer-logo {
+  margin-right: 120px;
+  color: #4d5ae5;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.footer-logo:hover {
+  color: #404bbf;
+}
+
+.footer-logo:focus {
+  color: #404bbf;
+}
+.footer-span {
+  color: #f4f4fd;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-span:hover {
+  color: #404bbf;
+}
+.footer-span:hover {
+  color: #404bbf;
+}
+.footer-end {
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 264px;
+}
+.social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.socials {
+  display: flex;
+  gap: 16px;
+}
+.socials-item {
+  width: 40px;
+  height: 40px;
+}
+.socials-link {
+  width: 100%;
+  height: 100%;
+  border-color: #4d5ae5;
+  background-repeat: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials-link:hover {
+  background-color: #31d0aa;
+}
+.socials-link:focus {
+  background-color: #31d0aa;
+}
+.socials-icon {
+  fill: #f4f4fd;
 }
 
 /**------------ MODAL-------------- */
