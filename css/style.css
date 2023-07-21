@@ -750,8 +750,9 @@ img {
   position: absolute;
   left: 50%;
   top: 50%;
+  border-radius: 4px;
   transform: translate(-50%, -50%) scaleX(1);
-  transition: transform 300ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -766,6 +767,8 @@ img {
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 24px;
   height: 24px;
   position: absolute;
@@ -778,11 +781,12 @@ img {
 .modal-close-btn:is(:hover, :focus) {
   background-color: #404bbf;
   border: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-icon {
-  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+c {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-icon:is(:hover, :focus) {
+.modal:is(:hover, :focus) .modal-close-btn {
   fill: #ffffff;
 }
 .is-hidden {
