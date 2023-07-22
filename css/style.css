@@ -651,14 +651,13 @@ img {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
-  align-items: baseline;
 }
 .footer-class {
   display: flex;
   align-items: baseline;
 }
 .footer-logo {
-  margin-right: 120px;
+  display: inline-block;
   color: #4d5ae5;
   font-size: 18px;
   font-family: "Raleway", sans-serif;
