@@ -653,6 +653,9 @@ img {
   display: flex;
   align-items: baseline;
 }
+.footer-logo-all {
+  margin-right: 120px;
+}
 .footer-logo {
   display: inline-block;
   color: #4d5ae5;
@@ -663,6 +666,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin-bottom: 16px;
+  margin-right: 120px;
 }
 .footer-logo:hover {
   color: #404bbf;
@@ -705,7 +709,6 @@ img {
   align-items: baseline;
   display: flex;
   justify-content: center;
-  margin: 0px auto;
   gap: 16px;
 }
 
