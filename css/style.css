@@ -402,8 +402,6 @@ img {
   padding: 120px 0;
 }
 
-.customers-div {
-}
 .customers-txt {
   font-size: 36px;
   line-height: 1.11;
@@ -412,8 +410,8 @@ img {
   text-align: center;
 }
 .customers-all {
-  display: flex;
   gap: 24px;
+  display: flex;
 }
 
 .customers-all-list {
@@ -435,8 +433,6 @@ img {
   border-color: #404bbf;
 }
 .customers-all-svg:hover {
-  color: #404bbf;
-  border-color: #404bbf;
 }
 .customers-icon {
   fill: currentColor;
@@ -696,6 +692,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
+  margin-right: 120px;
+}
+.social {
+  display: block;
 }
 .social-media {
   font-weight: 500;
@@ -705,15 +705,15 @@ img {
   color: #ffffff;
   margin-bottom: 16px;
 }
-.social {
-  align-items: baseline;
+.social-list {
   display: flex;
-  justify-content: center;
   gap: 16px;
 }
-
+.social-item {
+  width: 40px;
+  height: 40px;
+}
 .social-link {
-  text-align: justify;
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
@@ -730,11 +730,6 @@ img {
 
 .social-link:is(:hover, :focus) {
   background-color: #31d0aa;
-}
-
-.social-item {
-  width: 40px;
-  height: 40px;
 }
 
 /**------------ MODAL-------------- */
