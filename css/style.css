@@ -418,6 +418,8 @@ img {
   border-color: #404bbf;
 }
 .customers-all-svg:hover {
+  border-color: #404bbf;
+  color: #404bbf;
 }
 .customers-icon {
   fill: currentColor;
@@ -548,14 +550,16 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sex-img-all:hover {
+.sex-img-all:hover .keis-hover-txt {
+  transform: translateY(0);
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.sex-img-all:focus {
+.sex-img-all:focus .keis-hover-txt {
+  transform: translateY(0);
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -563,6 +567,7 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .all {
+  display: block;
   max-width: 264px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -613,7 +618,7 @@ img {
 .all:hover .keis-hover-txt {
   transform: translateY(0);
 }
-.all:focus .keis-hover-txt {
+.all:focus .sex-img-all .keis-hover-txt {
   transform: translateY(0);
 }
 .app:hover .keis-hover-txt {
