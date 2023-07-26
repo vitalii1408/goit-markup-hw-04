@@ -414,7 +414,6 @@ img {
   align-items: center;
   justify-content: center;
   color: #8e8f99;
-  height: 100%;
 }
 .customers-all-svg:is(:hover, :focus) {
   color: #404bbf;
@@ -590,9 +589,10 @@ img {
   border-top: none;
   text-align: left;
 }
-
-.keis-hover-txt {
+.keis {
   width: 100%;
+}
+.keis-hover-txt {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
