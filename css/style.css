@@ -591,10 +591,9 @@ img {
   text-align: left;
 }
 .keis-hover-txt {
-  width: 100%;
   font-family: Roboto;
   font-size: 16px;
-
+  font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   color: #f4f4fd;
@@ -602,8 +601,8 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  height: 300px;
-  width: 360px;
+  height: 100%;
+  width: 100%;
   flex-shrink: 0;
   border: 1px solid #f4f4fd;
   background-color: #4d5ae5;
