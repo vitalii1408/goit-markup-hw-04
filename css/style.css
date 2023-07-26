@@ -166,6 +166,7 @@ img {
   font-weight: 400;
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-style: normal;
 }
 .linc-com-tel:hover {
   color: #404bbf;
@@ -402,10 +403,10 @@ img {
 .customers-all-list {
   width: calc((100% - 120px) / 6);
   height: 88px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-all-svg {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #8e8f99;
   border-radius: 4px;
   display: flex;
@@ -576,7 +577,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.all:hover {
+.all:hover .keis-hover-txt {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -618,10 +619,10 @@ img {
   position: relative;
   overflow: hidden;
 }
-.customers-all-list:hover .keis-hover-txt {
+.all:hover .keis-hover-txt {
   transform: translateY(0);
 }
-.customers-all-list:focus .sex-img-all .keis-hover-txt {
+.sex-img-all:focus .keis-hover-txt {
   transform: translateY(0);
 }
 .app:hover .keis-hover-txt {
@@ -747,7 +748,10 @@ img {
   fill: #f4f4fd;
 }
 
-.social-link:is(:hover, :focus) {
+.social-link:hover {
+  background-color: #31d0aa;
+}
+.social-link:focus {
   background-color: #31d0aa;
 }
 
