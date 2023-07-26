@@ -406,6 +406,7 @@ img {
   height: 88px;
 }
 .customers-all-svg {
+  height: 100%;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #8e8f99;
@@ -589,10 +590,8 @@ img {
   border-top: none;
   text-align: left;
 }
-.keis {
-  width: 100%;
-}
 .keis-hover-txt {
+  width: 100%;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
