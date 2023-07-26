@@ -416,13 +416,13 @@ img {
   width: 100%;
   height: 100%;
 }
-.customers-all-svg:focus {
+.customers-all-svg:hover {
   color: #404bbf;
   border-color: #404bbf;
 }
-.customers-all-svg:hover {
+.customers-all-svg:focus {
+  background-color: #404bbf;
   border-color: #404bbf;
-  color: #404bbf;
 }
 .customers-icon {
   fill: currentColor;
@@ -581,7 +581,7 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.lint:focus .all {
+.all:focus .keis-hover-txt {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -622,7 +622,7 @@ img {
 .all:hover .keis-hover-txt {
   transform: translateY(0);
 }
-.sex-img-all:focus .keis-hover-txt {
+.all:focus .keis-hover-txt {
   transform: translateY(0);
 }
 .app:hover .keis-hover-txt {
