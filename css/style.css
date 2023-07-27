@@ -255,7 +255,6 @@ img {
   justify-content: center;
   border-radius: 4px;
   background: #f4f4fd;
-  padding: 24px 100px;
   margin-bottom: 8px;
   height: 112px;
 }
@@ -330,6 +329,7 @@ img {
 }
 .mark {
   padding: 32px 0px;
+  background: #fff;
 }
 .com {
   color: var(--accent-color);
@@ -356,7 +356,6 @@ img {
 .socials {
   display: flex;
   justify-content: center;
-  margin: 0px auto;
   gap: 24px;
 }
 
@@ -398,7 +397,6 @@ img {
 .customers-all {
   gap: 24px;
   display: flex;
-  width: 100%;
 }
 
 .customers-all-list {
@@ -497,10 +495,10 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 72px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-all {
@@ -548,41 +546,15 @@ img {
 .sex-img-all {
   display: block;
   width: calc((100% - 48px) / 3);
-  box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sex-img-all:hover .keis-hover-txt {
-  transform: translateY(0);
-  border-radius: 0px 0px 4px 4px;
-  background: #fff;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-.sex-img-all:focus .keis-hover-txt {
-  transform: translateY(0);
-  border-radius: 0px 0px 4px 4px;
-  background: #fff;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
 .all {
   display: block;
-  max-width: 264px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.all:hover .keis-hover-txt {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.all:focus .keis-hover-txt {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .app {
   padding: 32px 16px;
@@ -809,7 +781,7 @@ img {
 .modal-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal:is(:hover, :focus) .modal-close-btn {
+.modal-close-btn:is(:hover, :focus) .modal-icon {
   fill: #ffffff;
 }
 .is-hidden {
