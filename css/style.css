@@ -512,8 +512,6 @@ img {
   padding: 12px 24px;
   border-radius: 4px;
   background: var(--ocean, #404bbf);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.08);
 }
 
 .btn-all {
